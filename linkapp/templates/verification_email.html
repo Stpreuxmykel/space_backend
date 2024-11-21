@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code de Vérification</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+        }
+
+        h2 {
+            background: linear-gradient(to right, #6366f1, #a855f7, #ec4899);
+            color: white;
+            padding: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin: 20px 0;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        .code-box {
+            background-color: #e0e0e0;
+            padding: 15px;
+            border-radius: 30px;
+            display: inline-block;
+            font-size: 2em;
+            letter-spacing: 5px;
+        }
+
+        .validity {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+
+        /* Responsive adjustments */
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 80%;
+            }
+
+            .code-box {
+                font-size: 1.5em;
+                padding: 10px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .container {
+                width: 95%;
+            }
+
+            .code-box {
+                font-size: 1.2em;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Votre Code de Vérification</h2>
+        <p>Entrez ce code de vérification dans le champ :</p>
+        <div class="code-box">{{verification_code}}</div>
+        <p class="validity">Le code est valable uniquement pendant 30 minutes.</p>
+    </div>
+
+</body>
+</html>
