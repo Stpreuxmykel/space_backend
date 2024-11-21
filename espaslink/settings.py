@@ -130,10 +130,8 @@ SOCIALACCOUNT_PROVIDERS = {
 }
 
 
-# SOCIALACCOUNT_PROVIDERS['google']['CLIENT_ID'] = '510516255175-lsoai8nbdg0cvmlgtd7v17018gil7mm4.apps.googleusercontent.com'
-# SOCIALACCOUNT_PROVIDERS['google']['SECRET'] = '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'
-
-
+SOCIALACCOUNT_PROVIDERS['google']['CLIENT_ID'] = '510516255175-lsoai8nbdg0cvmlgtd7v17018gil7mm4.apps.googleusercontent.com'
+SOCIALACCOUNT_PROVIDERS['google']['SECRET'] = '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'
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=240),  # 4 hours
